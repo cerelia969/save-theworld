@@ -1,0 +1,22 @@
+body {
+  background-color: pink;
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
+  text-align: center;
+  font-size: 2rem;
+}
+
+h1 {
+  color: #800040;
+}
+
+h3 {
+  color: deeppink;
+}
+
+.wrong {
+  color: red;
+}
+
+.correct {
+  color: #00ff40;
+}

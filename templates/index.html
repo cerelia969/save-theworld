@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed&display=swap" rel="stylesheet">
+
+<title>Cerelia's Quiz</title>
+</head>
+<body>
+	<h1>Cerelia's Quiz!&#128151;</h1>
+
+  {% if message == "Correct" %}
+  <h3 class="correct">{{ message }}</h3>
+  {% else %}
+  <h3 class="wrong">{{ message }}</h3>
+  {% endif %}
+  
+  <h3>Question {{ question_num }}</p>
+  <h3>{{ question }}</p>
+ <form method="post">
+	<input type="text" name="user_input">
+	<input type="submit">
+
+ </form>
+</body>
+</html>
+  
